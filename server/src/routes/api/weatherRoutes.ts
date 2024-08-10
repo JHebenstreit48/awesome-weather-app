@@ -9,14 +9,16 @@ import WeatherService from '../../service/weatherService.js';
 router.post('/city', async(_req: Request, res: Response) => {
   res.json
 
+});
+
   // TODO: GET weather data from city name
 async(_req: Request, res: Response) => {
-  res.sendFile(path.join(_dirname, '../../service/historyService.ts'))
+  res.sendFile(path.join(__dirname, '../../service/historyService.ts'))
 });
 
   // TODO: save city to search history
 
-});
+
 
 // TODO: GET search history
 
