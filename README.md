@@ -30,7 +30,7 @@ To create an online weather application to see the 5-day forcast and weather in 
 
 ## Contributions
 
-I used the class repo and the following resources.
+I used the class repo and the following resources. I also had assistance from Erik Hoversten and Daniel Ceballos.
 
 https://stackoverflow.com/questions/46903002/move-a-module-from-devdependencies-to-dependencies-in-npm-package-json,
 https://coding-boot-camp.github.io/full-stack/render/render-deployment-guide,
@@ -42,7 +42,7 @@ https://www.google.com/search?q=what+does+router.sendFile+do+in+node.js&oq=what+
 
 
 ## Tests
-
+I used npm run start to test the code.
   
 ## Questions
 
