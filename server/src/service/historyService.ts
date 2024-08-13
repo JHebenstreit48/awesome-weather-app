@@ -45,7 +45,7 @@ class HistoryService {
     if (!city) {
       throw new Error('city cannot be blank');
     }
-    const newCity: City = {name: city, id: uuidv4()};
+    const newCity: City = {name: city};
 
     return await this.getCities()
     .then((cities) => {
@@ -58,7 +58,11 @@ class HistoryService {
     .then(() => newCity);
   }
   // * BONUS TODO: Define a removeCity method that removes a city from the searchHistory.json file
-  async removeCity(id: string) {}
+  async removeCity(id: string) {
+    return await this.getCities()
+    .then((cities) => cities.filter((city) => city.id !== id))
+    .then((filteredCities) => this.write(filteredCities));
+  }
 }
 
 export default new HistoryService();

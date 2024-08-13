@@ -30,7 +30,7 @@ To create an online weather application to see the 5-day forcast and weather in 
 
 ## Contributions
 
-I used the class repo and the following resources. I also had assistance from Erik Hoversten and Daniel Ceballos.
+I used the class repo and the following resources. I also had assistance from Erik Hoversten and Daniel Ceballos. I also used the class repo to assist me with this assignment, which includes various modules and the mini project for module 9 Main folder.
 
 https://stackoverflow.com/questions/46903002/move-a-module-from-devdependencies-to-dependencies-in-npm-package-json,
 https://coding-boot-camp.github.io/full-stack/render/render-deployment-guide,
