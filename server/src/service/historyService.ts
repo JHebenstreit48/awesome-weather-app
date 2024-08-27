@@ -1,4 +1,5 @@
-import fs from 'node:fs/promises'
+import fs from 'node:fs/promises';
+import { v4 as uuidv4 } from 'uuid';
 import { parse } from 'node:path';
 
 // TODO: Define a City class with name and id properties
@@ -45,7 +46,7 @@ class HistoryService {
     if (!city) {
       throw new Error('city cannot be blank');
     }
-    const newCity: City = {name: city};
+    const newCity: City = {name: city, id: uuidv4()};
 
     return await this.getCities()
     .then((cities) => {
